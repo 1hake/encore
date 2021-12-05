@@ -1,20 +1,15 @@
-on: 
-  push: 
-    branches:  
-      - master 
-name: 🚀 Deploy website on push
+on: [push]
+
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  deploy:
     runs-on: ubuntu-latest
+    name: Deploy my nice code
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v2
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.2.0
-      with:
-        server: 141.95.149.2
-        username: ${{ secrets.ftp_username }}
-        password: ${{ secrets.ftp_password }}
-        server-dir: /var/www/encore-github/
+    - name: Deploy to OVH hosting
+      uses: pitscher/ovh-deploy-hosting-action@v1
+      env:
+        OVH_HOSTING_USER: ${{ secrets.OVH_HOSTING_USER }}
+        OVH_HOSTING_PASSWORD: ${{ secrets.OVH_HOSTING_PASSWORD }}
+        OVH_HOSTING_DOMAIN: vps-9f433100.vps.ovh.net
+        REPOSITORY_NAME: encore-github-action
+        REPOSITORY_URL: https://github.com/1hake/encore.git
