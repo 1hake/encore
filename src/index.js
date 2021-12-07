@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './pages/MainPage';
 import * as serviceWorker from './serviceWorker';
-import { RouterPage } from './layout/Router';
+import { MyRouter } from './layout/Router';
 
 ReactDOM.render(
   <React.StrictMode>
-    <RouterPage />
+    <MyRouter />
   </React.StrictMode>,
   document.getElementById('root')
 );

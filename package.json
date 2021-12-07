@@ -1,5 +1,6 @@
 {
-  "name": "landingpage-react-template",
+  "name": "encore-project",
+  "homepage": "http://www.encore-project.fr",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

@@ -142,6 +142,7 @@ hr {
 }
 .section-title {
   margin-bottom: 40px;
+
 }
 .section-title h2 {
   position: relative;
@@ -215,6 +216,9 @@ a:focus,
   background-size: cover;
   -o-background-size: cover;
 }
+
+
+
 .intro .overlay {
   background: rgba(0, 0, 0, 0.2);
 }
@@ -240,11 +244,53 @@ a:focus,
   margin: 0 auto;
   margin-bottom: 60px;
 }
+
+.intro-associate {
+  display: table;
+  width: 100%;
+  padding: 0;
+  background: url(../img/intro-bg-associate.jpg) center center no-repeat;
+  background-color: #e5e5e5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.intro-associate .overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+.intro-associate h1 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+}
+.intro-associate h1 span {
+  font-weight: 800;
+  color: #ff194e;
+}
+.intro-associate p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
 header .intro-text {
   padding-top: 350px;
   padding-bottom: 200px;
   text-align: right;
+
 }
+
+
 /* Features Section */
 #features {
   background: #f6f6f6;

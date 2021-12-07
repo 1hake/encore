@@ -133,24 +133,28 @@
   ],
   "Team": [
     {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
+      "img": "img/team/01.png",
+      "name": "Lorène",
+      "job": "Director",
+      "link": "https://www.linkedin.com/in/lor%C3%A8ne-breton-65142134/"
     },
     {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
+      "img": "img/team/02.png",
+      "name": "Colin",
+      "job": "Senior Designer",
+      "link": "https://www.linkedin.com/in/colin-champdavoine-088480145/"
     },
     {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
+      "img": "img/team/03.png",
+      "name": "Marie",
+      "job": "Senior Designer",
+      "link": "https://www.instagram.com/marie.boubou/?hl=fr"
     },
     {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
+      "img": "img/team/04.png",
+      "name": "Valentin",
+      "job": "Project Manager",
+      "link": "https://www.linkedin.com/in/valentin-nauton/"
     }
   ],
   "Contact": {
@@ -165,17 +169,40 @@
     {
       "icon": "fa fa-group",
       "title": "Des associé.e.s",
-      "text": "Vous aussi, vous voulez faire de la seconde main le premier choix ? Ecrivons cette histoire ensemble. "
+      "text": "Vous aussi, vous voulez faire de la seconde main le premier choix ? Ecrivons cette histoire ensemble. ",
+      "link": "/associes"
     },
     {
       "icon": "fa fa-comments-o",
       "title": "Des consommateur.ice.s",
-      "text": "Offrez-moi 3 minutes de votre temps, je vous offrirai de quoi découvrir l’histoire de vos objets ! "
+      "text": "Offrez-moi 3 minutes de votre temps, je vous offrirai de quoi découvrir l’histoire de vos objets ! ",
+      "link": ""
     },
     {
       "icon": "fa fa-shopping-cart",
       "title": "Des professionnel.le.s",
-      "text": "Soyez parmi les premiers à tester la plateforme Encore. Participez à sa construction !"
+      "text": "Soyez parmi les premiers à tester la plateforme Encore. Participez à sa construction !",
+      "link": ""
     }
-  ]
+  ],
+  "AboutAssociate": {
+    "Why": [
+      {
+        "title": "Raconter l’histoire de ses objets",
+        "subtitle": "Avant de les vendre, de les donner ou de les transmettre, et peu importe le canal utilisé ! (Vinted, Leboncoin, Youzd, Emmaüs, Héritage…) "
+      },
+      {
+        "title": "Découvrir l’histoire des objets identifiés",
+        "subtitle": "En scannant le QR code sur son étiquette Encore, ou en rentrant son numéro d’identification. Et écrire la suite ! "
+      },
+      {
+        "title": "S’inspirer, rêver, voyager ",
+        "subtitle": "A travers les récits d’inconnus qui (se) racontent, à travers leurs objets, des tranches de vies ordinaires, ou pas."
+      }
+    ]
+  },
+  "HeaderAssociate": {
+    "title": "Ecrivons cette histoire ensemble !",
+    "paragraph": "Je cherche des associés pour créer la première plateforme de traçabilité des objets d’occasion.     "
+  }
 }

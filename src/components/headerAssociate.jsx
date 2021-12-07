@@ -1,7 +1,7 @@
-export const Header = (props) => {
+export const HeaderAssociate = (props) => {
   return (
     <header id='header'>
-      <div className='intro'>
+      <div className='intro-associate'>
         <div className='overlay'>
           <div className='container'>
             <div >
@@ -15,12 +15,7 @@ export const Header = (props) => {
                   <span></span>
                 </h1>
                 <p>{props.data ? props.data.paragraph : 'Loading'}</p>
-                <a
-                  href='#features'
-                  className='btn btn-custom btn-lg page-scroll'
-                >
-                  Participer
-                </a>{' '}
+
               </div>
             </div>
           </div>
