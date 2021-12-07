@@ -1,4 +1,6 @@
-export const Navigation = (props) => {
+import Logo from "./logo"
+
+export const NavigationAssociate = (props) => {
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container'>
@@ -15,9 +17,7 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
           </button>
-          <a className='navbar-brand page-scroll' href='#page-top'>
-            ENCORE
-          </a>{' '}
+          <Logo></Logo>
         </div>
 
         <div
@@ -27,17 +27,12 @@ export const Navigation = (props) => {
           <ul className='nav navbar-nav navbar-right'>
             <li>
               <a href='#about' className='page-scroll'>
-                Le projet
+                Moi, moi et encore moi
               </a>
             </li>
             <li>
-              <a href='#features' className='page-scroll'>
-                Besoin de vous
-              </a>
-            </li>
-            <li>
-              <a href='#testimonials' className='page-scroll'>
-                Beta Testeurs
+              <a href='#team' className='page-scroll'>
+                La Team
               </a>
             </li>
 
