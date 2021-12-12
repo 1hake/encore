@@ -1,10 +1,12 @@
 // react component for text logo
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-const Logo = () => {
+const Logo = (props) => {
+  let location = useLocation();
+
   return (
-    <Link to="/">
+    <Link to={location === "/" ? "/" : "/associes"}>
       <a className='navbar-brand page-scroll' href='#page-top'>
         ENCORE
       </a>

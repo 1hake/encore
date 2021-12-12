@@ -27,7 +27,7 @@ export const NavigationAssociate = (props) => {
           <ul className='nav navbar-nav navbar-right'>
             <li>
               <a href='#about' className='page-scroll'>
-                Moi, moi et encore moi
+                L'idée
               </a>
             </li>
             <li>
