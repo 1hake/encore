@@ -6,11 +6,8 @@ const Logo = (props) => {
   let location = useLocation();
 
   return (
-    <Link to={location === "/" ? "/" : "/associes"}>
-      <a className='navbar-brand page-scroll' href='#page-top'>
-        ENCORE
-      </a>
-      <div style={{ height: '20px', width: '100px', backgroundColor: '#FF194E', marginTop: '22px', marginLeft: '20px' }}></div>
+    <Link to={location.pathname === "/" ? "/#header" : "/associes#header"}>
+      <img style={{ width: '150px' }} src={'img/logoEncore.png'} alt="logo" />
     </Link>
   );
 };

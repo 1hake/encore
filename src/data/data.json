@@ -101,39 +101,27 @@
   ],
   "Testimonials": [
     {
-      "img": "img/testimonials/01.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "img": "img/testimonials/crushon.png",
+      "text": "Plus qu'un gage de qualité, la traçabilité est un enjeu de confiance qui concerne toutes les marques de mode. Dans le secteur de la seconde-main, pouvoir connaître l'histoire cachée derrière un vêtement vintage renforce son caractère unique ainsi que la dimension émotionnelle que nous lui portons.",
+      "name": "Camille Greco",
+      "position": "Directrice Marketing & Communication - CrushOn"
     },
     {
-      "img": "img/testimonials/02.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "img": "img/testimonials/alice.jpeg",
+      "text": "Certaines de mes créations sont fabriquées à partir de tissus ayant déjà eu une première vie (déco de mariage, linge de maison...). J'adorerais pouvoir facilement raconter cette histoire à mes clients, ça me permettrait de créer un lien plus fort avec eux",
+      "name": "Alice Monnot",
+      "position": "Fondatrice - Le Fil d'Alice"
     },
     {
-      "img": "img/testimonials/03.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/04.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
-    },
-    {
-      "img": "img/testimonials/05.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/06.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "img": "img/testimonials/cafenoir.jpeg",
+      "text": "J'ai la conviction qu'au delà de sa marque, et de son état, c'est aussi l'histoire d'un objet qui fait sa valeur.  Sur notre site, nous racontons déjà l'histoire de chaque montre. Encore nous permettra d'inscrire cette histoire pour les générations à venir, en permettant aux futurs propriétaires des modèles d'écrire la suite de leur histoire....",
+      "name": "Maxime Garabedian",
+      "position": "Fondateur - Café Noir Les Montres "
     }
   ],
   "Team": [
     {
-      "img": "img/team/01.png",
+      "img": "img/team/edito.jpeg",
       "name": "Lorène",
       "job": "Director",
       "link": "https://www.linkedin.com/in/lor%C3%A8ne-breton-65142134/"
@@ -160,10 +148,12 @@
   "Contact": {
     "address": "4321 California St, San Francisco, CA 12345 ",
     "phone": "+33 6 73 90 35 89",
-    "email": "colinemillielaurent@hotmail.com",
+    "email": "encore.coline@gmail.com",
     "facebook": "fb.com",
     "twitter": "twitter.com",
-    "youtube": "youtube.com"
+    "youtube": "youtube.com",
+    "instagram": "https://www.instagram.com/encore.project.fr/?hl=fr",
+    "linkedin": "https://www.linkedin.com/company/encore-project-fr/"
   },
   "Features": [
     {
@@ -173,16 +163,10 @@
       "link": "/associes"
     },
     {
-      "icon": "fa fa-comments-o",
-      "title": "Des consommateur.ice.s",
-      "text": "Offrez-moi 3 minutes de votre temps, je vous offrirai de quoi découvrir l’histoire de vos objets ! ",
-      "link": ""
-    },
-    {
       "icon": "fa fa-shopping-cart",
       "title": "Des professionnel.le.s",
       "text": "Soyez parmi les premiers à tester la plateforme Encore. Participez à sa construction !",
-      "link": ""
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSfXYV3q1kZLNpUU1w28ygae6pa5SE9eQ3R7spWZCLbXwwEnJA/viewform?usp=sf_link"
     }
   ],
   "AboutAssociate": {

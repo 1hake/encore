@@ -14,7 +14,7 @@ export const Features = (props) => {
                   flexDirection: 'column',
                   justifyContent: "center",
                   alignItems: "center"
-                }} key={`${d.title}-${i}`} className='col-xs-6 col-md-4'>
+                }} key={`${d.title}-${i}`} className='col-xs-6 col-md-6'>
                   {' '}
                   <i className={d.icon}></i>
                   <h3>{d.title}</h3>

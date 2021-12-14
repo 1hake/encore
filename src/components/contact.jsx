@@ -8,6 +8,7 @@ const initialState = {
 }
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState)
+  const [mailSent, setMailSent] = useState(false)
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -17,14 +18,13 @@ export const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(name, email, message)
     emailjs
       .sendForm(
         'service_qb73yo8', 'template_o3dz7j8', e.target, 'user_obQts8UtpXQYHlb2LeAbh'
       )
       .then(
         (result) => {
-          console.log(result.text)
+          setMailSent(true);
           clearState()
         },
         (error) => {
@@ -88,8 +88,8 @@ export const Contact = (props) => {
                   <p className='help-block text-danger'></p>
                 </div>
                 <div id='success'></div>
-                <button type='submit' className='btn btn-custom btn-lg'>
-                  Envoyer Message
+                <button disabled={mailSent} type='submit' className='btn btn-custom btn-lg'>
+                  {mailSent ? <>Message envoyé{'  '}<i className='fa fa-check'></i></> : "Envoyer Message"}
                 </button>
               </form>
             </div>
@@ -99,10 +99,10 @@ export const Contact = (props) => {
               <h3>Coline LAURENT</h3>
 
               <div className='social'>
-                <a href={props.data ? props.data.twitter : '/'}>
+                <a href={props.data ? props.data.instagram : '/'}>
                   <i className='fa fa-instagram'></i>
                 </a>
-                <a href={props.data ? props.data.youtube : '/'}>
+                <a href={props.data ? props.data.linkedin : '/'}>
                   <i className='fa fa-linkedin'></i>
                 </a>
               </div>
