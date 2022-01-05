@@ -30,6 +30,7 @@ export const MainPage = () => {
       <About data={landingPageData.About} />
       <Features data={landingPageData.Features} />
       <Testimonials data={landingPageData.Testimonials} />
+      <Gallery></Gallery>
       <Contact data={landingPageData.Contact} />
     </div>
   );
