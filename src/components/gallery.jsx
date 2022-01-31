@@ -1,49 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import { Image } from "./image";
-
-export const getDataFromAirtable = async () => {
-  const response = await fetch('https://api.airtable.com/v0/appi3C5Rp4J0bzJRt/Table%201?api_key=keyFC7jLiV3xKlFet');
-  const data = await response.json();
-  return data.records;
-}
-
-export const Card = (props) => {
-  const { record } = props;
-  const { fields, createdTime } = record;
-  const { intro, status, object, attachments } = fields;
-
-
-
-  return (
-    <div className="card">
-      <div className="card-image">
-
-      </div>
-      <div className="card-content">
-        <p className="card-content-title">{intro}</p>
-        <p className="card-content-status">{status}</p>
-        <p className="card-content-object">{object}</p>
-      </div>
-      <div className="card-content-footer">
-        <span className="card-content-footer-date">{createdTime}</span>
-        <span className="card-content-footer-link">
-
-        </span>
-      </div>
-    </div>
-  );
-};
+import { MyContext } from '../layout/Context';
+import { convertDateToFrenchString, sliceNRandomElementsArray } from '../utils/utils';
+import { Card } from './display/StoryCard';
 
 
 export const Gallery = (props) => {
-  const [data, setData] = useState([]);
+  const { data, setData } = useContext(MyContext);
 
-  useEffect(() => {
-    getDataFromAirtable().then(data => {
-      console.log(data);
-      setData(data)
-    });
-  }, []);
 
   return (
     <div id='portfolio' className='text-center'>
@@ -56,8 +20,8 @@ export const Gallery = (props) => {
             dapibus leonec.
           </p>
         </div>
-        <div className='row'>
-          {data && data.map((d, i) => (
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          {data && sliceNRandomElementsArray(data, 3).map((d, i) => (
             <Card record={d} key={`${i}`} />
           ))}
         </div>
