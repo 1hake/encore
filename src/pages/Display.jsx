@@ -6,6 +6,7 @@ import "./App.css";
 import { useContext } from "react";
 import { MyContext } from "../layout/Context";
 import { Card } from "../components/display/StoryCard";
+import { StepsManager } from "../components/display/StepsManager";
 
 
 
@@ -35,7 +36,7 @@ export const DisplayPage = (props) => {
       <Navigation />
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', height: '100vh' }}>
 
-        {props.match.params.id ? currentCard && <Card record={currentCard}></Card> : <Gallery />}
+        {currentCard && <StepsManager record={currentCard}></StepsManager>}
       </div>
     </div>
   );

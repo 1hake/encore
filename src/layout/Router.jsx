@@ -11,8 +11,17 @@ import { DisplayPage } from "../pages/Display";
 import { MainPage } from "../pages/MainPage";
 import { MyProvider } from "./Context";
 import "../pages/App.css";
-import { Gallery } from "../components/display/Galery";
+import { Gallery } from "../components/gallery";
+import { Waitlist } from "../components/waitlist";
+import { Brands } from "../components/brands";
 
+const generateBrandRoute = (brandName, brandLogo, url) => {
+    return (
+        <Route exact path={"/" + brandName}>
+            <Brands brandName={brandName} brandLogo={brandLogo} />
+        </Route>
+    )
+}
 
 
 export const MyRouter = () => {
@@ -20,8 +29,12 @@ export const MyRouter = () => {
         <Router>
             <MyProvider>
                 <Switch>
-                    <Route exact path="/gallery" component={Gallery} />
-                    <Route exact path="/histoires/:id" component={DisplayPage} />
+                    <Route path="/histoires/:id" component={DisplayPage} />
+
+                    <Route exact path="/histoires" component={Gallery} />
+                    <Route exact path="/waitlist" component={Waitlist} />
+                    {generateBrandRoute("crushon", "crushon.jpeg", "/crushon")}
+                    {generateBrandRoute("lysis", "lysis.jpeg", "/jpeg")}
 
                     <Route path="/b2b">
                         <B2BPage></B2BPage>
