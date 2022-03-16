@@ -22,6 +22,7 @@ export const convertDateToFrenchString = (date) => {
 
 
 export const sliceNRandomElementsArray = (array, n) => {
-    const shuffled = array.sort(() => 0.5 - Math.random());
+    const filteredArray = array.filter(element => element.fields.attachments && element.fields.attachments.length > 0);
+    const shuffled = filteredArray.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, n);
 }

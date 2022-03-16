@@ -11,10 +11,12 @@ const goToUrl = (url) => {
 
 export const StepsManager = (props) => {
     const { record } = props;
+    console.log("🚀 ~ file: StepsManager.jsx ~ line 14 ~ StepsManager ~ record", record)
     const [nextSteps, setNextSteps] = useState([]);
 
     useEffect(() => {
         if (record.fields.nextsteps) {
+            console.log("🚀 ~ file: StepsManager.jsx ~ line 19 ~ useEffect ~ record", record)
             record.fields.nextsteps.forEach(step => {
                 base('Suites').find(step, function (err, record) {
                     var newNextSteps = [...nextSteps, record]
@@ -32,11 +34,8 @@ export const StepsManager = (props) => {
                 nextSteps && nextSteps.map(step => {
                     return (
                         <>
-                            <div style={{
-                                borderLeft: "2px solid black",
-                                height: '50px'
-                            }}></div>
-                            <Card firstElement={false} key={step.id} record={step}></Card>
+                            <img style={{ height: '100px' }} src="img/timeline.gif" alt="" />
+                            <Card firstElement={false} key={step.fields.recordID} record={step}></Card>
                         </>
                     )
                 })}
@@ -48,7 +47,7 @@ export const StepsManager = (props) => {
 
                 <div
                     onClick={() => {
-                        goToUrl('https://airtable.com/shrkMc8Afa8l51gkQ')
+                        goToUrl('https://airtable.com/shr3VFfCAhWlmSyYf?prefill_origine=' + record.fields.recordID + '&prefill_encoreID=' + record.fields.encoreID)
                     }}
                     className="left-button">
                     Racontez la suite de l'histoire

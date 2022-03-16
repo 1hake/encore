@@ -57,7 +57,6 @@ export const MyContext = React.createContext();
 export const MyProvider = ({ children }) => {
     const [data, setData] = useState([])
 
-
     useEffect(() => {
         base('Table 1').select({
             maxRecords: 50,
