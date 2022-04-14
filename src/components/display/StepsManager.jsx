@@ -39,10 +39,7 @@ export const StepsManager = (props) => {
                         </>
                     )
                 })}
-            <p style={{ maxWidth: '80vw', padding: '5px', backgroundColor: 'white', fontSize: '0.9em', fontStyle: 'italic', textAlign: 'center' }}>
-                Au delà de son usage, cet objet transporte des souvenirs.
-                En en devenant dépositaire, c'est à vous de continuer son histoire !
-            </p>
+
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px', maxWidth: '80vw' }}>
 
                 <div
@@ -60,6 +57,10 @@ export const StepsManager = (props) => {
                     Découvrez d'autres histoires
                 </div>
             </div>
+            <p style={{ maxWidth: '80vw', padding: '5px', backgroundColor: 'white', fontSize: '0.9em', fontStyle: 'italic', textAlign: 'center' }}>
+                Au delà de son usage, cet objet transporte des souvenirs.
+                En en devenant dépositaire, c'est à vous de continuer son histoire !
+            </p>
         </div>
     )
 }

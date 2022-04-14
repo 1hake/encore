@@ -21,7 +21,7 @@ export const Header = (props) => {
                   href='#features'
                   className='btn btn-custom btn-lg page-scroll'
                 >
-                  Participer
+                  Découvrir la plateforme
                 </a>{' '}
               </div>
             </div>

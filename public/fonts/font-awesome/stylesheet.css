@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'MEROCHE';
+    src: url('MEROCHE.eot');
+    src: url('MEROCHE.eot?#iefix') format('embedded-opentype'),
+        url('MEROCHE.woff2') format('woff2'),
+        url('MEROCHE.woff') format('woff'),
+        url('MEROCHE.ttf') format('truetype'),
+        url('MEROCHE.svg#MEROCHE') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -10,6 +10,7 @@ import { Navigation } from './navigation';
 
 export const Gallery = (props) => {
   const { data, setData } = useContext(MyContext);
+  console.log("🚀 ~ file: gallery.jsx ~ line 13 ~ Gallery ~ data", data)
   const [encoreId, setEncoreId] = useState("");
   const [error, setError] = useState(false);
   // get histoiry from router 
@@ -34,7 +35,7 @@ export const Gallery = (props) => {
               // go to histoire/id if encoreId is valid
               if (data.length > 0) {
                 let filtered = data.find(item => {
-                  return item.fields.encoreID.toString() === encoreId
+                  return item.fields.encoreID === parseInt(encoreId, 10)
                 })
                 if (filtered) {
                   window.location.href = 'http://encore-project.fr/histoires/' + filtered.fields.encoreID;
@@ -63,7 +64,7 @@ export const Gallery = (props) => {
         </div>
         <div style={{ textAlign: 'center', marginTop: '5vh' }}>
 
-          <h3>{"Juste curieux.se ?".toUpperCase()}</h3>
+          <h3 style={{ fontFamily: 'Meroche' }}>{"Juste curieux.se ?"}</h3>
           <p>Voici quelques objets à valeur émotionnelle ajoutée.</p>
 
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>

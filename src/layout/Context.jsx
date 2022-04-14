@@ -59,7 +59,7 @@ export const MyProvider = ({ children }) => {
 
     useEffect(() => {
         base('Table 1').select({
-            maxRecords: 50,
+            maxRecords: 1000,
             view: "Grid view"
         }).eachPage(function page(records, fetchNextPage) {
             setData(records)

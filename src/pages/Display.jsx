@@ -18,13 +18,14 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 
 export const DisplayPage = (props) => {
   const { data } = useContext(MyContext);
+  console.log("🚀 ~ file: Display.jsx ~ line 21 ~ DisplayPage ~ data", data)
   const [currentCard, setCurrentCard] = useState(false);
 
   useEffect(() => {
     if (props.match.params.id) {
       if (data.length > 0) {
         let filtered = data.find(item => {
-          return item.fields.encoreID.toString() === props.match.params.id
+          return item.fields.encoreID === parseInt(props.match.params.id, 10)
         })
         setCurrentCard(filtered)
       }
