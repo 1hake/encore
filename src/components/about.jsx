@@ -4,26 +4,34 @@ export const About = (props) => {
       <div className="container">
         <div className="row">
           <div className="col-xs-12 col-md-6">
-            {" "}
-            <img src="img/about.jpg" className="img-responsive" alt="" />{" "}
+            <img src="img/about.jpg" className="img-responsive" alt="" />
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
-              <h2>Le projet</h2>
-              <h3>Sur www.encore-project.fr, on pourra bientôt… </h3>
+              <h2 style={{marginTop: '10px'}}>Et si on redonnait aux objets toute leur valeur émotionnelle ?</h2>
               <div className="list-style">
-                <div className="col-lg-12 col-sm-12 col-xs-12">
+                <div style={{padding: '0px'}} className="col-lg-12 col-sm-12 col-xs-12">
                   <ul>
                     {props.data
                       ? props.data.Why.map((d, i) => (
                         <>
                           <li key={`${d}-${i}`}>{d.title}</li>
-                          <div style={{
+                          {d.subtitle && <div style={{
                             marginBottom: "10px",
-                          }} key={`${d}-${i}`}>{d.subtitle}</div>
+                          }} key={`${d}-${i}`}>{d.subtitle}</div>}
                         </>
                       ))
                       : "loading"}
+                      <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
+
+                      <a
+                        style={{marginTop: '20px'}}
+                        href='/histoires/'
+                        className='btn btn-custom btn-lg page-scroll'
+                        >
+                        Découvrir la plateforme
+                      </a>
+                      </div>
                   </ul>
                 </div>
               </div>

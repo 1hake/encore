@@ -10,6 +10,7 @@ import { Team } from "../components/Team";
 import { Contact } from "../components/contact";
 import JsonData from "../data/data.json";
 import SmoothScroll from "smooth-scroll";
+import { AssociateSection } from "../components/associatesection";
 
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -27,10 +28,11 @@ export const MainPage = () => {
     <div>
       <Navigation />
       <Header data={landingPageData.Header} />
-      <About data={landingPageData.About} />
       <Features data={landingPageData.Features} />
+      <About data={landingPageData.About} />
       <Testimonials data={landingPageData.Testimonials} />
       {/* <Gallery></Gallery> */}
+      <AssociateSection></AssociateSection>
       <Contact data={landingPageData.Contact} />
     </div>
   );

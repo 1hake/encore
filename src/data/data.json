@@ -7,16 +7,11 @@
   "About": {
     "Why": [
       {
-        "title": "Raconter l’histoire de ses objets",
-        "subtitle": "Avant de les vendre, de les donner ou de les transmettre, et peu importe le canal utilisé ! (Vinted, Leboncoin, Youzd, Emmaüs, Héritage…) "
+        "title": "Encore n’est pas une nouvelle plateforme de revenu d’objets d’occasion.",
+        "subtitle": "C’est une plateforme de storytelling, sur laquelle les vendeurs peuvent raconter d’où viennent leurs objets : Quelle a été leur première vie ? Où ont ils été chinés ? Par qui ? "
       },
       {
-        "title": "Découvrir l’histoire des objets identifiés",
-        "subtitle": "En scannant le QR code sur son étiquette Encore, ou en rentrant son numéro d’identification. Et écrire la suite ! "
-      },
-      {
-        "title": "S’inspirer, rêver, voyager ",
-        "subtitle": "A travers les récits d’inconnus qui (se) racontent, à travers leurs objets, des tranches de vies ordinaires, ou pas."
+        "title": "Une fois l’histoire d’un objet racontée, son « livre d’or » devient partageable, via un lien , ou via un QR code, pour améliorer l’expérience client, et générer plus d’interactions post-achat, puisque l’objectif est évidemment de raconter la suite de l’histoire."        
       }
     ]
   },
@@ -101,22 +96,18 @@
   ],
   "Testimonials": [
     {
-      "img": "img/testimonials/crushon.png",
-      "text": "Plus qu'un gage de qualité, la traçabilité est un enjeu de confiance qui concerne toutes les marques de mode. Dans le secteur de la seconde-main, pouvoir connaître l'histoire cachée derrière un vêtement vintage renforce son caractère unique ainsi que la dimension émotionnelle que nous lui portons.",
-      "name": "Camille Greco",
-      "position": "Directrice Marketing & Communication - CrushOn"
+      "img": "img/testimonials/logo_blom.png",
+      "text": "Sur notre site, tous les objets ont une histoire car ils ont été utilisés pour une soirée en particulier. Travailler avec Encore nous a permis de nous rendre compte à quel point cela intéresse les gens. Nous allons essayer de pérenniser le dispositif.",
+      "name": "Sarah",
+      "position": "Fondatrice de Bloowm, un site de revente d’objets événementiels de seconde main ",
+      "link": "https://bloowm.com/"
     },
     {
-      "img": "img/testimonials/alice.jpeg",
-      "text": "Certaines de mes créations sont fabriquées à partir de tissus ayant déjà eu une première vie (déco de mariage, linge de maison...). J'adorerais pouvoir facilement raconter cette histoire à mes clients, ça me permettrait de créer un lien plus fort avec eux",
-      "name": "Alice Monnot",
-      "position": "Fondatrice - Le Fil d'Alice"
-    },
-    {
-      "img": "img/testimonials/cafenoir.jpeg",
-      "text": "J'ai la conviction qu'au delà de sa marque, et de son état, c'est aussi l'histoire d'un objet qui fait sa valeur.  Sur notre site, nous racontons déjà l'histoire de chaque montre. Encore nous permettra d'inscrire cette histoire pour les générations à venir, en permettant aux futurs propriétaires des modèles d'écrire la suite de leur histoire....",
-      "name": "Maxime Garabedian",
-      "position": "Fondateur - Café Noir Les Montres "
+      "img": "img/testimonials/logo_en_second_lieu.png",
+      "text": "J’ai toujours voulu raconter les histoires des pièces que je distribue. Encore permet à mes fournisseurs de le faire directement, sans devoir passer par moi. En boutique, c’est une expérience que les clients adorent. ",
+      "name": "Anaïs",
+      "position": "Fondatrice de la boutique En Second Lieu, le petit Grand Magasin de la seconde main, à Paris",
+      "link": "https://www.ensecondlieu.com"
     }
   ],
   "Team": [
@@ -131,12 +122,6 @@
       "name": "Colin",
       "job": "Senior Designer",
       "link": "https://www.linkedin.com/in/colin-champdavoine-088480145/"
-    },
-    {
-      "img": "img/team/03.png",
-      "name": "Marie",
-      "job": "Senior Designer",
-      "link": "https://www.instagram.com/marie.boubou/?hl=fr"
     },
     {
       "img": "img/team/04.png",
@@ -158,16 +143,26 @@
   "Features": [
     {
       "icon": "fa fa-group",
-      "title": "Des associé.e.s",
-      "text": "Vous aussi, vous voulez faire de la seconde main le premier choix ? Ecrivons cette histoire ensemble. ",
+      "img": "benefice_economique.png",
+      "title": "Bénéfice économique",
+      "text": "Les objets déjà utilisés se « dévalorisent » progressivement, revenant moins cher à l’achat",
       "link": "/associes"
     },
     {
       "icon": "fa fa-shopping-cart",
-      "title": "Des professionnel.le.s",
-      "text": "Soyez parmi les premiers à tester la plateforme Encore. Participez à sa construction !",
+      "img": "benefice_ecologique.png",
+      "title": "Bénéfice écologique",
+      "text": "Consommer d’occasion permet de réduire son empreinte carbone, d’éviter de la surproduction",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSfXYV3q1kZLNpUU1w28ygae6pa5SE9eQ3R7spWZCLbXwwEnJA/viewform?usp=sf_link"
+    }, 
+    {
+      "icon": "fa fa-shopping-cart",
+      "img": "benefice_social.png",
+      "title": "Bénéfice social",
+      "text": "En achetant ou donnant aux associations, la seconde main permet la réinsertion sociale ",
       "link": "https://docs.google.com/forms/d/e/1FAIpQLSfXYV3q1kZLNpUU1w28ygae6pa5SE9eQ3R7spWZCLbXwwEnJA/viewform?usp=sf_link"
     }
+
   ],
   "AboutAssociate": {
     "Why": [
@@ -187,6 +182,6 @@
   },
   "HeaderAssociate": {
     "title": "Ecrivons cette histoire ensemble !",
-    "paragraph": "Je cherche des associés pour créer la première plateforme de traçabilité des objets d’occasion.     "
+    "paragraph": "Je cherche des associé.e.s pour créer la première plateforme de traçabilité des objets d’occasion.     "
   }
 }

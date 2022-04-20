@@ -3,16 +3,18 @@ export const Testimonials = (props) => {
     <div id='testimonials'>
       <div className='container'>
         <div className='section-title text-center'>
-          <h2>Ils seront les premiers à tester Encore</h2>
+          <h2>Témoignages partenaires</h2>
         </div>
         <div className='row'>
           {props.data
             ? props.data.map((d, i) => (
-              <div key={`${d.name}-${i}`} className='col-md-4'>
+              <div key={`${d.name}-${i}`} className='col-md-6'>
                 <div className='testimonial'>
                   <div className='testimonial-image'>
                     {' '}
-                    <img src={d.img} alt='' />{' '}
+                    <a href={d.link}>
+                      <img src={d.img} style={{height: '10vh'}} />{' '}
+                    </a>
                   </div>
                   <div className='testimonial-content'>
                     <p>"{d.text}"</p>
@@ -23,6 +25,15 @@ export const Testimonials = (props) => {
               </div>
             ))
             : 'loading'}
+             <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
+              <a
+              style={{marginTop: '30px'}}
+              href='mailto:encore.coline@gmail.com'
+              className='btn btn-custom btn-lg page-scroll'
+              >
+                Mettre en place un partenariat
+              </a>
+              </div>
         </div>
       </div>
     </div>

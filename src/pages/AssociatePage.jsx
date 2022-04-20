@@ -14,6 +14,7 @@ import "./App.css";
 import { HeaderAssociate } from "../components/headerAssociate";
 import { AboutAssociate } from "../components/aboutAssociate";
 import { NavigationAssociate } from "../components/navigationAssociate";
+import { AboutAssociate2 } from "../components/aboutAssociate2";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -31,7 +32,9 @@ export const AssociatePage = () => {
       <NavigationAssociate />
       <HeaderAssociate data={landingPageData.HeaderAssociate} />
       <AboutAssociate data={landingPageData.AboutAssociate} />
+
       <Team data={landingPageData.Team}></Team>
+      <AboutAssociate2 ></AboutAssociate2>
       <Contact data={landingPageData.Contact} />
     </div>
   );
