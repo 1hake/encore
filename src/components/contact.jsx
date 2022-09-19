@@ -41,7 +41,8 @@ export const Contact = (props) => {
               <div className='section-title'>
                 <h2>Restons en contact</h2>
                 <p>
-                  Si vous êtes arrivés jusqu’ici, vous êtes vraiment motivés par ce projet. (Pas vrai?)
+                  Professionnel·le·s de la seconde main, acteurs du réemploi ou simples curieux·ses ?
+                  Laissez-nous vos coordonnées, on vous informe vite de la suite !
                 </p>
               </div>
               <form name='sentMessage' validate onSubmit={handleSubmit}>
@@ -81,7 +82,7 @@ export const Contact = (props) => {
                     id='message'
                     className='form-control'
                     rows='4'
-                    placeholder="Hey, je veux devenir ton associé.e / partenaire, voici mes coordonnées."
+                    placeholder="Hello, moi aussi j'adore les objets qui ont une histoire !"
                     required
                     onChange={handleChange}
                   ></textarea>

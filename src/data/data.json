@@ -7,11 +7,11 @@
   "About": {
     "Why": [
       {
-        "title": "Encore n’est pas une nouvelle plateforme de revenu d’objets d’occasion.",
+        "title": "Encore n’est pas une nouvelle plateforme de revente d’objets d’occasion.",
         "subtitle": "C’est une plateforme de storytelling, sur laquelle les vendeurs peuvent raconter d’où viennent leurs objets : Quelle a été leur première vie ? Où ont ils été chinés ? Par qui ? "
       },
       {
-        "title": "Une fois l’histoire d’un objet racontée, son « livre d’or » devient partageable, via un lien , ou via un QR code, pour améliorer l’expérience client, et générer plus d’interactions post-achat, puisque l’objectif est évidemment de raconter la suite de l’histoire."        
+        "title": "Une fois l’histoire d’un objet racontée, son « livre d’or » devient partageable, via un lien , ou via un QR code, pour améliorer l’expérience client, et générer plus d’interactions post-achat, puisque l’objectif est évidemment de raconter la suite de l’histoire."
       }
     ]
   },
@@ -94,6 +94,12 @@
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     }
   ],
+  "podcast": {
+    "title": "MÉMORABLE",
+    "subtitle1": "LE PODCAST DES OBJETS (EXTRA)ORDINAIRES",
+    "subtitle": "nos objets ont tous une histoire.",
+    "paragraph": "Coline LAURENT reçoit des professionnel·le·s de la seconde main, du vintage, ou de l’upcycling qui racontent tou·te·s à leur manière l’histoire des objets qu’iels possèdent, vendent, ou transforment."
+  },
   "Testimonials": [
     {
       "img": "img/testimonials/logo_blom.png",
@@ -154,7 +160,7 @@
       "title": "Bénéfice écologique",
       "text": "Consommer d’occasion permet de réduire son empreinte carbone, d’éviter de la surproduction",
       "link": "https://docs.google.com/forms/d/e/1FAIpQLSfXYV3q1kZLNpUU1w28ygae6pa5SE9eQ3R7spWZCLbXwwEnJA/viewform?usp=sf_link"
-    }, 
+    },
     {
       "icon": "fa fa-shopping-cart",
       "img": "benefice_social.png",
@@ -162,7 +168,6 @@
       "text": "En achetant ou donnant aux associations, la seconde main permet la réinsertion sociale ",
       "link": "https://docs.google.com/forms/d/e/1FAIpQLSfXYV3q1kZLNpUU1w28ygae6pa5SE9eQ3R7spWZCLbXwwEnJA/viewform?usp=sf_link"
     }
-
   ],
   "AboutAssociate": {
     "Why": [

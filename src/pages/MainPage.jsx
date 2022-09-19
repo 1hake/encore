@@ -11,6 +11,7 @@ import { Contact } from "../components/contact";
 import JsonData from "../data/data.json";
 import SmoothScroll from "smooth-scroll";
 import { AssociateSection } from "../components/associatesection";
+import { Podcast } from "../components/podcast";
 
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -20,6 +21,7 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 
 export const MainPage = () => {
   const [landingPageData, setLandingPageData] = useState({});
+
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
@@ -30,9 +32,10 @@ export const MainPage = () => {
       <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
       <About data={landingPageData.About} />
+      <Podcast data={landingPageData.podcast}></Podcast>
       <Testimonials data={landingPageData.Testimonials} />
       {/* <Gallery></Gallery> */}
-      <AssociateSection></AssociateSection>
+      {/* <AssociateSection></AssociateSection> */}
       <Contact data={landingPageData.Contact} />
     </div>
   );

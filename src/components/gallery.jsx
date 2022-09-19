@@ -6,6 +6,11 @@ import { Card } from './display/StoryCard';
 import { ImageBlock } from './display/ImageBlock';
 import { useHistory } from 'react-router-dom';
 import { Navigation } from './navigation';
+import { Contact } from './contact';
+import JsonData from "../data/data.json";
+
+
+
 
 
 export const Gallery = (props) => {
@@ -64,16 +69,23 @@ export const Gallery = (props) => {
         </div>
         <div style={{ textAlign: 'center', marginTop: '5vh' }}>
 
-          <h3 style={{ fontFamily: 'Meroche' }}>{"Juste curieux.se ?"}</h3>
-          <p>Voici quelques objets à valeur émotionnelle ajoutée.</p>
+          <h3 style={{ fontFamily: 'Meroche' }}>{"Ceci est un prototype !"}</h3>
+          <br />
+          <p>La version bêta de la plateforme est en cours de développement.
+            <br />
+            Pour être le·a premier·e informé·e de son lancement, laisse nous tes coordonnées ci-dessous !
+          </p>
 
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            {data && sliceNRandomElementsArray(data, 3).map((d, i) => (
-              <ImageBlock item={d} key={`${i}`} />
-            ))}
-          </div>
+          <br />
+          <img style={{ height: '100px' }} src="img/timeline.gif" alt="" />
+
+          <br />
+          <br />
+
+
         </div>
       </div>
+      <Contact data={JsonData.Contact} />
     </>
   )
 }

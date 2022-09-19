@@ -207,6 +207,21 @@ hr {
   border: 0;
 }
 
+.podcast-btn-custom {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  background-color: #FFF;
+  padding: 14px 34px;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.5s linear;
+  border: 0;
+}
+
 .btn-custom:hover,
 .btn-custom:focus,
 .btn-custom.focus,
@@ -216,6 +231,17 @@ hr {
   background-image: none;
   background-color: #FF194E;
 }
+
+.podcast-btn-custom:hover,
+.podcast-btn-custom:focus,
+.podcast-btn-custom.focus,
+.podcast-btn-custom:active,
+.podcast-btn-custom.active {
+  color: #fff;
+  background-image: none;
+  background-color: #FF194E;
+}
+
 
 .btn:active,
 .btn.active {
@@ -242,6 +268,18 @@ a:focus,
   width: 100vw;
   padding: 0;
   background: url(../img/intro-bg.jpg) center center no-repeat;
+  background-color: #e5e5e5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.podcast {
+  display: table;
+  width: 100vw;
+  padding: 0;
+  background: url(../img/podcast-bg.png) center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -738,4 +776,74 @@ label {
   #about img {
     margin: 50px 0;
   }
+}
+
+.podcast .overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.podcast h1 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+}
+
+.subtitle1 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 200px;
+  width: 50%;
+
+}
+
+.podcast h1 span {
+  font-weight: 800;
+  color: #ff194e;
+}
+
+.podcast p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.paragraph-podcast {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  max-width: 50vw;
+}
+
+header .podcast-text {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+.podcast-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
 }
